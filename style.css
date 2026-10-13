@@ -1,0 +1,31 @@
+:root{color-scheme:dark;--bg:#010406;--ink:#eef3f5;--muted:#899a9f;--cyan:#02ddec}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#010406;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+body{background:radial-gradient(ellipse 31rem 28rem at 50% 42%,rgba(1,174,195,.16),transparent 80%),radial-gradient(ellipse 70rem 40rem at 50% 50%,#051016 0%,transparent 68%),#010406}
+a{color:inherit}
+.home{min-height:100svh;display:flex;flex-direction:column;align-items:center;position:relative;isolation:isolate;padding:2rem 1rem 1.25rem}
+.home::before{content:"";position:absolute;z-index:-1;inset:6% 14% 9%;pointer-events:none;border-radius:50%;background:repeating-radial-gradient(circle at 50% 40%,transparent 0,transparent 120px,rgba(0,214,229,.025) 121px,transparent 123px);opacity:.7}
+.hero{width:100%;min-height:calc(100svh - 5rem);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.logo-wrap{width:min(66vw,490px);position:relative;filter:drop-shadow(0 0 26px rgba(0,212,232,.11))}
+.logo-wrap::before{content:"";position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle,rgba(0,220,236,.10),transparent 68%);filter:blur(30px)}
+.logo{width:100%;height:auto;display:block;position:relative}
+h1{font-size:clamp(1.2rem,2.2vw,2rem);font-weight:300;letter-spacing:.27em;margin:-4.8rem 0 0;color:#eef2f4;line-height:1.6}
+.stores{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:center;margin-top:4.4rem}
+.store{display:flex;gap:.65rem;align-items:center;justify-content:center;min-width:185px;min-height:61px;padding:.8rem 1.05rem;border-radius:11px;border:1px solid rgba(67,158,173,.50);background:rgba(0,3,5,.5);box-shadow:0 0 25px rgba(0,181,205,.05);color:#f2f7f7;user-select:none}
+.store svg{width:27px;height:27px}.store span{display:flex;flex-direction:column;align-items:flex-start;gap:2px}.store small{font-size:11px;color:#9bb2b8}.store strong{font-weight:500;font-size:17px}
+.store.disabled{cursor:default;opacity:.79}
+footer{margin-top:auto;text-align:center;width:100%}
+footer nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;column-gap:.7rem;row-gap:.45rem;font-size:10px;letter-spacing:.04em;color:#7b898e}
+footer a{text-decoration:none}footer a:hover{color:#d1e8ed}
+.legal-page{min-height:100svh;max-width:840px;padding:40px 26px 65px;margin:0 auto;background:#020508}
+.legal-head{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #1e343b;padding-bottom:22px}
+.legal-brand{letter-spacing:.45em;text-decoration:none;font-size:15px}
+.legal-head a:last-child{text-decoration:none;font-size:12px;color:#a6c6ce}
+.legal-page h1{margin:60px 0 22px;font-size:clamp(28px,4vw,40px);letter-spacing:.04em}
+.legal-page h2{font-size:17px;color:#bedde2;font-weight:500;margin:34px 0 8px}
+.legal-page p,.legal-page li{font-size:15px;line-height:1.8;color:#a9b8bf}
+.legal-page p strong{color:#edf3f5}
+.legal-note{background:#0c161c;border-left:2px solid #1f7a88;padding:14px 18px;margin:25px 0}
+.legal-page footer{margin-top:55px;border-top:1px solid #1e343b;padding-top:25px}
+@media(max-width:650px){.home{padding:10vh 14px 18px}.hero{min-height:70svh}.logo-wrap{width:min(90vw,470px)}h1{margin:-3.5rem 0 0;font-size:clamp(18px,4.2vw,26px);letter-spacing:.12em}.stores{margin-top:3rem;gap:9px}.store{min-width:155px;min-height:55px;padding:.7rem}.store strong{font-size:14px}.store small{font-size:10px}footer nav{font-size:9px;column-gap:6px}.legal-page{padding:25px 18px}}
+@media(prefers-reduced-motion:no-preference){.logo-wrap{animation:glow 9s ease-in-out infinite}@keyframes glow{0%,100%{filter:drop-shadow(0 0 20px rgba(0,210,232,.08))}50%{filter:drop-shadow(0 0 34px rgba(0,210,232,.19))}}}

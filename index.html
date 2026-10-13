@@ -1,17 +1,46 @@
 <!doctype html>
-<html lang="tr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#020507"><meta name="description" content="ECHRA — Are you available?">
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#010608">
+<meta name="description" content="ECHRA — Are you available?">
 <title>ECHRA — Are you available?</title>
-<link rel="icon" type="image/png" href="/echra-logo.png"><link rel="stylesheet" href="/style.css">
-</head><body><main class="home">
-<div class="hero">
-  <div class="logo-wrap"><img src="/echra-logo.png" alt="ECHRA" class="logo" width="1024" height="1024"></div>
-  <h1>Are you available?</h1>
-  <div class="stores" aria-label="Uygulamayı indirme bağlantıları">
-    <div class="store disabled" aria-label="App Store, yakında" role="status"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.7c.02 2.22 1.95 2.96 1.97 2.97-.02.05-.31 1.07-1.02 2.12-.61.91-1.25 1.82-2.24 1.84-.97.02-1.28-.57-2.4-.57s-1.47.55-2.37.59c-.95.04-1.68-.95-2.3-1.85-1.27-1.84-2.25-5.18-.94-7.46.65-1.13 1.82-1.85 3.09-1.87.96-.02 1.87.64 2.4.64.52 0 1.5-.79 2.53-.67.43.02 1.63.17 2.4 1.3-.06.04-1.43.84-1.42 2.46Zm-1.77-6.12c.5-.61.84-1.46.75-2.31-.72.03-1.6.48-2.11 1.09-.47.54-.88 1.41-.77 2.24.81.06 1.63-.41 2.13-1.02Z"/></svg><span><small>Yakında</small><strong>App Store</strong></span></div>
-    <div class="store disabled" aria-label="Google Play, yakında" role="status"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.5 3.8 13.9 14.2l4-4L3.5 3.8Z"/><path fill="#4285F4" d="M3.5 20.2 17.9 12 13.9 9.8 3.5 20.2Z"/><path fill="#FBBC04" d="m17.9 12 2.9-1.7c.9-.5.9-1.8 0-2.3l-2.9-1.7-4 4 4 4Z"/><path fill="#EA4335" d="M3.5 3.8C3.2 4.1 3 4.5 3 5v14c0 .5.2.9.5 1.2l10.4-10.4L3.5 3.8Z"/></svg><span><small>Yakında</small><strong>Google Play</strong></span></div>
-  </div>
-</div>
-<footer><nav aria-label="Yasal bilgiler"><a href="/terms.html">Kullanım Şartları</a><span>·</span><a href="/privacy.html">Gizlilik</a><span>·</span><a href="/cookies.html">Çerezler</a><span>·</span><a href="/kvkk.html">KVKK</a><span>·</span><a href="/delete-account.html">Hesap Silme</a><span>·</span><a href="/support.html">İletişim</a></nav></footer>
-</main></body></html>
+<link rel="icon" type="image/png" href="/echra-logo.png">
+<link rel="stylesheet" href="/hero.css">
+</head>
+<body>
+<main class="landing">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="echo echo-wide" aria-hidden="true"></div>
+  <div class="echo echo-inner" aria-hidden="true"></div>
+  <section class="composition" aria-labelledby="question">
+    <!-- The original approved raster logo is used unchanged. Screen blending removes the
+         apparent black square without modifying the lettering or red A dot. -->
+    <div class="logo-window">
+      <img class="approved-logo" src="/echra-logo.png"
+           width="1024" height="1024" alt="ECHRA" decoding="async" fetchpriority="high">
+    </div>
+    <h1 id="question">Are you available?</h1>
+    <div class="stores" aria-label="Uygulama indirme seçenekleri">
+      <div class="store-badge" role="img" aria-label="Download on the App Store — yakında; bağlantı henüz aktif değil">
+        <svg class="apple-icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.7c.02 2.22 1.95 2.96 1.97 2.97-.02.05-.31 1.07-1.02 2.12-.61.91-1.25 1.82-2.24 1.84-.97.02-1.28-.57-2.4-.57s-1.47.55-2.37.59c-.95.04-1.68-.95-2.3-1.85-1.27-1.84-2.25-5.18-.94-7.46.65-1.13 1.82-1.85 3.09-1.87.96-.02 1.87.64 2.4.64.52 0 1.5-.79 2.53-.67.43.02 1.63.17 2.4 1.3-.06.04-1.43.84-1.42 2.46Zm-1.77-6.12c.5-.61.84-1.46.75-2.31-.72.03-1.6.48-2.11 1.09-.47.54-.88 1.41-.77 2.24.81.06 1.63-.41 2.13-1.02Z"/></svg>
+        <span class="store-label"><span class="store-small">Download on the</span><span class="store-large">App Store</span></span>
+      </div>
+      <div class="store-badge" role="img" aria-label="Get it on Google Play — yakında; bağlantı henüz aktif değil">
+        <svg class="play-icon" aria-hidden="true" viewBox="0 0 24 24"><path fill="#34A853" d="M3.5 3.8 13.9 14.2l4-4L3.5 3.8Z"/><path fill="#4285F4" d="M3.5 20.2 17.9 12 13.9 9.8 3.5 20.2Z"/><path fill="#FBBC04" d="m17.9 12 2.9-1.7c.9-.5.9-1.8 0-2.3l-2.9-1.7-4 4 4 4Z"/><path fill="#EA4335" d="M3.5 3.8C3.2 4.1 3 4.5 3 5v14c0 .5.2.9.5 1.2l10.4-10.4L3.5 3.8Z"/></svg>
+        <span class="store-label"><span class="store-small">Get it on</span><span class="store-large">Google Play</span></span>
+      </div>
+    </div>
+  </section>
+  <footer><nav aria-label="Yasal bağlantılar">
+    <a href="/terms.html">Kullanım Şartları</a><span aria-hidden="true">·</span>
+    <a href="/privacy.html">Gizlilik</a><span aria-hidden="true">·</span>
+    <a href="/cookies.html">Çerezler</a><span aria-hidden="true">·</span>
+    <a href="/kvkk.html">KVKK</a><span aria-hidden="true">·</span>
+    <a href="/delete-account.html">Hesap Silme</a><span aria-hidden="true">·</span>
+    <a href="/support.html">İletişim</a>
+  </nav></footer>
+</main>
+</body></html>
